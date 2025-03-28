@@ -8,9 +8,22 @@ import { HeaderComponent } from "./encabezados/header/header.component";
   imports: [RouterOutlet, FooterComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+  
 })
+
 export class AppComponent {
   title = 'MKCorporacion';
+
+
+  imagePaths: string[] = [
+    'assets/images/Logo.png',
+    'assets/images/img2.png',
+    'assets/images/img3.svg'
+  ];
+
+
+
+
   ngOnInit() {
     this.loadScript('assets/js/jquery.min.js');
     this.loadScript('assets/js/jquery.backtotop.js');

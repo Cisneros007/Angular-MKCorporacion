@@ -1,37 +1,44 @@
 body {
-    background-color: white !important;
+
     color: black !important; /* Asegurar que el texto sea negro */
     font-family: Arial, sans-serif; /* Opcional: mejorar legibilidad */
 }
 
 .wrapper {
-    background-color: white !important;
+    background-color: #082b39 !important;
 }
 
 header {
-    background-color: white;
+    background-color:#082b39;
     padding: 10px 0;
     color: black !important;
 }
 
 /* Asegurar que los enlaces también sean negros */
 a {
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
     text-decoration: none; /* Evita subrayado */
 }
-
-a:hover {
-    color: gray; /* Opcional: cambia el color al pasar el mouse */
+#Conectores {
+    border-radius: 10px;
+    padding: 15px;
 }
 
-button {
-    color: black !important;
-    background-color: white;
-    border: 1px solid black;
-    padding: 5px 10px;
-    cursor: pointer;
+#Conectores .nav-link {
+    color: #feffff; /* Blanco con matiz azulado */
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-    background-color: lightgray;
+#Conectores .nav-link:hover {
+    background-color: #feffff; /* Blanco */
+    color: #0b3c50 !important; /* Azul oscuro */
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
+
+
+
