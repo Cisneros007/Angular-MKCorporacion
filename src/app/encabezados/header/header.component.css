@@ -1,0 +1,37 @@
+body {
+    background-color: white !important;
+    color: black !important; /* Asegurar que el texto sea negro */
+    font-family: Arial, sans-serif; /* Opcional: mejorar legibilidad */
+}
+
+.wrapper {
+    background-color: white !important;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+    color: black !important;
+}
+
+/* Asegurar que los enlaces también sean negros */
+a {
+    color: black !important;
+    text-decoration: none; /* Evita subrayado */
+}
+
+a:hover {
+    color: gray; /* Opcional: cambia el color al pasar el mouse */
+}
+
+button {
+    color: black !important;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgray;
+}

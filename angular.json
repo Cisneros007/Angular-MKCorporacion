@@ -27,9 +27,16 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+  "src/assets/js/jquery.min.js",
+  "src/assets/js/jquery.backtotop.js",
+  "src/assets/js/jquery.easypiechart.min.js",
+  "src/assets/js/jquery.mobilemenu.js",
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
           },
           "configurations": {
             "production": {
