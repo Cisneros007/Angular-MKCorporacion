@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  logo = 'assets/images/Logo.png';
+  banner = 'assets/images/nosotros-bg.jpeg';
+
+
 }
+

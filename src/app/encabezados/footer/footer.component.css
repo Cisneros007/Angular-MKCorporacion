@@ -1,0 +1,128 @@
+/* Estilos generales */
+.overlay {
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Secciones del footer */
+.one_quarter {
+    flex: 1;
+    min-width: 220px;
+    padding: 10px;
+}
+
+/* Logo */
+h1.logoname a {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1.logoname span {
+    color: #feffff;
+}
+
+/* Títulos de sección */
+h6.heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #feffff;
+}
+
+/* Lista de enlaces */
+.linklist {
+    list-style: none;
+    padding: 0;
+}
+
+.linklist li {
+    margin-bottom: 8px;
+}
+
+.linklist a {
+    color: #feffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linklist a:hover {
+    color: #0b3c50;
+    text-decoration: underline;
+}
+
+/* Redes Sociales */
+.faico {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.faico a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faico a:hover {
+    transform: scale(1.1);
+    color: #feffff;
+}
+
+/* Copyright */
+.wrapper.row5 {
+    background: #0b3c50;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#copyright p {
+    color: #feffff;
+    margin: 0;
+}
+
+#copyright a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    text-decoration: underline;
+    color: #feffff;
+}
+
+/* Botón de volver arriba */
+#backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0b3c50;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#backtotop i {
+    font-size: 18px;
+}
+
+#backtotop:hover {
+    background: #ffffff;
+    color: #0b3c50;
+}

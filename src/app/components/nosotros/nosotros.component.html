@@ -1,13 +1,4 @@
 
-<div class="bgded overlay" style="background-image:url('../images/nosotros-bg1.jpeg');">
-    <div id="breadcrumb" class="hoc clear"> 
-      <ul>
-        <li><a href="#">Nosotros</a></li>
-    
-      </ul>
-    </div>
-  </div>
-  
   <div>
     <!-- Nosotros sección -->
     <section class="nosotros">
@@ -20,13 +11,13 @@
             <p>
               Somos MK, tu aliado en el éxito de ventas. Nos especializamos en ofrecer soluciones de distribución y ventas diseñadas para maximizar tus resultados. Con un enfoque ágil, eficiente y personalizado, nuestro compromiso es garantizar que cada oportunidad se convierta en éxito. Nuestra experiencia y visión nos permite adaptarnos a un mercado en constante evolución, ofreciendo productos y servicios innovadores.
             </p>
-            <img src="../images/Logo.jpg" alt="Oficina" class="about-img-large img-fluid">
+            <img [src]="logo" alt="Oficina" class="about-img-large img-fluid">
           </div>
           <!-- Columna de imágenes y texto adicional -->
           <div class="col-md-6 about-images">
             <div class="image-group">
-              <img src="../images/Logo.jpg" alt="Equipo trabajando" class="about-img-small img-fluid">
-              <img src="../images/Logo.jpg" alt="Reunión en oficina" class="about-img-small img-fluid">
+              <img  [src]="logo" alt="Equipo trabajando" class="about-img-small img-fluid">
+              <img  [src]="banner" alt="Reunión en oficina" class="about-img-small img-fluid">
             </div>
             <p>
               En MK creemos en el trabajo en equipo, la innovación y el compromiso con la excelencia. Cada miembro de nuestro equipo desempeña un papel clave para alcanzar nuestros objetivos comunes. Nuestra filosofía se basa en la confianza mutua y el respeto, lo que nos permite trabajar de manera eficiente y lograr resultados extraordinarios.
@@ -42,14 +33,64 @@
     </section>
   </div>
   
+
+  <div class="bgded overlay " style="background-color: #082b39;;">
+    <section id="services" class="hoc container clear"> 
+      <div class="sectiontitle">
+        <p class="nospace font-xs">Conoce más sobre nosotros</p>
+        <h6 class="heading font-x2">¿Quiénes somos en MK?</h6>
+      </div>
+      <ul class="nospace group elements elements-three">
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-bullseye"></i></a>
+            <h6 class="heading">Nuestra Misión</h6>
+            <p>Brindamos soluciones innovadoras y eficientes en ventas, conectando con nuestros clientes a través de un servicio ágil, personalizado y de la más alta calidad.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-eye"></i></a>
+            <h6 class="heading">Nuestra Visión</h6>
+            <p>Ser el referente en distribución y ventas, liderando el mercado con estrategias innovadoras que impulsen el crecimiento de las marcas y brinden experiencias de compra excepcionales.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-lightbulb"></i></a>
+            <h6 class="heading">Nuestro Compromiso</h6>
+            <p>Nos especializamos en soluciones comerciales que optimizan tus resultados, asegurando que cada oportunidad se traduzca en crecimiento y rentabilidad.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-users"></i></a>
+            <h6 class="heading">Trabaja con Nosotros</h6>
+            <p>Buscamos profesionales apasionados y proactivos para crecer juntos en un ambiente dinámico, con oportunidades de desarrollo y crecimiento.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-handshake"></i></a>
+            <h6 class="heading">Aliados Estratégicos</h6>
+            <p>Colaboramos con marcas y clientes para ofrecer soluciones personalizadas que maximicen su alcance y éxito en el mercado.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-comments"></i></a>
+            <h6 class="heading">Contáctanos</h6>
+            <p>Si quieres impulsar tu negocio o formar parte de nuestro equipo, estamos aquí para ayudarte. ¡Hablemos y crezcamos juntos!</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+
+
   <div> 
     <!--Nuestras oficinas -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid ">
       <h1 class="TituloUBI">Conoce nuestras Ubicaciones</h1>
-      <div class="container py-5 position-relative">
+      <div class="container py-5 ">
           <div class="d-flex align-items-center">
               <!-- Imagen a la izquierda -->
-              <img src="../images/Logo.jpg" alt="Logo">
+              <img [src]="banner" alt="Logo">
               <!-- Texto a la derecha sobresaliente -->
               <div class="overlay-text">
                   <h6>Ubicación: Cusco</h6>
@@ -65,12 +106,11 @@
           </div>
       </div>
     </div>
-    <hr class="btmspace-80">
-    <div class="container-fluid py-5">
-      <div class="container py-5 position-relative">
+    <div class="container-fluid ">
+      <div class="container py-5 ">
           <div class="d-flex align-items-center">
               <!-- Imagen a la izquierda -->
-              <img src="../images/Logo.jpg" alt="Logo">
+              <img [src]="banner" alt="Logo">
               <!-- Texto a la derecha sobresaliente -->
               <div class="overlay-text">
                   <h6>Ubicación: Arequipa</h6>
@@ -86,12 +126,11 @@
           </div>
       </div>
     </div>
-    <hr class="btmspace-80">
     <div class="container-fluid py-5">
       <div class="container py-5 position-relative">
           <div class="d-flex align-items-center">
               <!-- Imagen a la izquierda -->
-              <img src="../images/Logo.jpg" alt="Logo">
+              <img [src]="banner" alt="Logo">
               <!-- Texto a la derecha sobresaliente -->
               <div class="overlay-text">
                   <h6>Ubicación: Huancayo</h6>
@@ -110,18 +149,3 @@
   </div>
   
   
-  <div class="container-vision-mision">
-    
-    <div class="container">
-  
-  
-        <!-- Eslogan -->
-        <div class="row">
-            <div class="col-12">
-                <div class="eslogan">
-                    <p style="font-family:Arial, Helvetica, sans-serif; color: white;">"Impulsamos ventas, transformamos experiencias."</p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>

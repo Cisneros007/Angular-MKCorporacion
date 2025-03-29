@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './nosotros.component.css'
 })
 export class NosotrosComponent {
-
+  logo = 'assets/images/Logo.png';
+  banner = 'assets/images/nosotros-bg.jpeg';
 }
