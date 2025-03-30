@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   logo = 'assets/images/Logo.png';
+  logoS = 'assets/images/LogoSinFondo.png';
+  logoI ='assets/images/logo-iluminado.png';
 }
 
