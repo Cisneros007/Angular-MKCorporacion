@@ -44,3 +44,85 @@ p, h3, h6, .Descripcion {
 .carousel-fade .carousel-item {
     transition: opacity 1.5s ease-in-out;
 }
+
+
+
+/* Noticias */
+.container-noticias {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* 🔥 Aumenta la separación entre el logo y el contenido */
+    padding: 40px 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* 🔥 Logo */
+.logo-noticias {
+    flex-shrink: 0; /* Evita que el logo se reduzca demasiado */
+}
+
+.logo-noticias img {
+    max-width: 300px;
+
+}
+
+/* 📌 Contenido */
+.content-noticias {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    text-align: left;
+    padding-left: 20%; /* 🛠 Extra separación del texto */
+}
+
+.content-noticias h2 {
+    font-size: 22px;
+    color: #0b3c50;
+    margin-bottom: 10px;
+}
+
+.content-noticias p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* 🎯 Botón */
+.btn {
+    display: inline-block;
+    background: #0b3c50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #062838;
+    transform: scale(1.05);
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 768px) {
+    .container-noticias {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px; /* 🔥 Reduce la separación en móviles */
+    }
+
+    .logo-noticias img {
+        max-width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .content-noticias {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .btn {
+        width: 100%;
+        display: block;
+    }
+}
