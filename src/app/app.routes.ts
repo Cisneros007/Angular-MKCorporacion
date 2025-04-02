@@ -12,4 +12,8 @@ export const routes: Routes = [
   { path: 'laboral',component: OportunidadLaboralComponent},
   { path: 'contactanos',component: ContactanosComponent},
   { path: 'enviar',component: EnviarCvComponent},
+<<<<<<<<< Temporary merge branch 1
+  { path: 'portal-empt',component: PortalMtpeComponent}
+=========
+>>>>>>>>> Temporary merge branch 2
 ];
