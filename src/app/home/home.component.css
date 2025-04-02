@@ -44,3 +44,127 @@ p, h3, h6, .Descripcion {
 .carousel-fade .carousel-item {
     transition: opacity 1.5s ease-in-out;
 }
+
+
+
+
+/*Sostenibilidad */
+.header-h {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+.sostenibilidad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bcd5e2;
+}
+.sostenibilidad .text {
+    flex: 1;
+    padding: 20px;
+}
+.sostenibilidad h2 {
+    color: #0b3c50;
+}
+.sostenibilidad button {
+    background-color: #0b3c50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.sostenibilidad .image img {
+    max-width: 100%;
+    height: 350px;
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.card {
+    text-align: center;
+    width: 45%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+.card h3 {
+    color: #0b3c50;
+}
+
+/* Objetivo */
+.container-objetivo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 1;
+    max-width: 500px;  /* Controlar el tamaño del contenido */
+    padding: 30px;
+    text-align: left;
+}
+
+.content h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.content p {
+    color: #666;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0b3c50;  
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #08313d; 
+}
+
+.image-section {
+    flex: 1;
+    max-width: 550px; 
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}

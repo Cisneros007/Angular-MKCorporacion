@@ -57,6 +57,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+/** Para el main menu*/
+function openMenu() {
+    let menu = document.querySelector('.menu-mobile select');
+    menu.style.display = 'block'; // Mostrar el combo box
+    menu.focus(); // Activar el foco automáticamente para que el usuario pueda seleccionar
+  }
+
+  function navigateToPage(select) {
+    let url = select.value;
+    if (url) {
+      window.location.href = url;
+    }
+  }
+
 //Mensaje 
 const btn = document.getElementById('button');
 
@@ -112,3 +126,4 @@ function sendEmail(fileData) {
             console.error('Error:', err);
         });
     }    
+//SCRIPS

@@ -1,26 +1,27 @@
-<div class="wrapper row1">
-    <header id="header" class="hoc clear">
-      <div id="logo" class="fl_left"> 
-        <a href="/"><img [src]="logo"href="/" alt="Logo de MK Corporación"></a>
-        <a href="/"><img [src]="logoS" alt=""></a>
-        <a href="/"><img [src]="logoI" alt=""></a>
-    </div>
-      <nav id="mainav" class="fl_right"> 
-        <ul id="Conectores" class="nav justify-content-center ">
-            <li class="nav-item">
-                <a class="nav-link text-white fw-bold" href="nosotros">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white fw-bold" href="laboral">Oportunidad Laboral</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white fw-bold" href="contactanos">Contáctanos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white fw-bold" href="enviar">Portafolio</a>
-            </li>
-        </ul>
-        
-      </nav>
-    </header>
+<header id="header" class="hoc clear">
+  <div id="logo" class="fl_left"> 
+    <a href="/"><img [src]="logoS" alt="Logo de MK Corporación"></a>
   </div>
+
+  <!-- Menú Normal para Escritorio -->
+  <nav id="" class="fl_right">
+    <ul id="Conectores" class="nav justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="nosotros">Nosotros</a></li>
+      <li class="nav-item"><a class="nav-link" href="laboral">Oportunidad Laboral</a></li>
+      <li class="nav-item"><a class="nav-link" href="contactanos">Contáctanos</a></li>
+      <li class="nav-item"><a class="nav-link" href="enviar">Portafolio</a></li>
+    </ul>
+  </nav>
+ <!-- Combo Box (Inicialmente Oculto en escritorio) -->
+ <div class="menu-mobile">
+  <select onchange="navigateToPage(this)">
+    <option value=""  selected>☰ Menú</option>
+    <option value="/">Inicio</option>
+    <option value="nosotros">Nosotros</option>
+    <option value="laboral">Oportunidad Laboral</option>
+    <option value="contactanos">Contáctanos</option>
+    <option value="enviar">Portafolio</option>
+  </select>
+</div>
+</header>

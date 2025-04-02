@@ -128,16 +128,6 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .inspace-30{padding:30px;}
 
 
-/*
-Template Name: Chillaid
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
-File: Layout CSS
-*/
-
 
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
@@ -297,7 +287,6 @@ File: Layout CSS
 #footer{padding:80px 0;}
 
 #footer .heading{margin-bottom:50px; font-size:1.2rem;}
-#footer .logoname{margin-bottom:50px;}
 #footer p + .faico{margin-top:30px;}
 
 #footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
@@ -407,11 +396,7 @@ th, td{padding:5px 8px;}
 td{border-width:0 1px;}
 
 
-/* Gallery
---------------------------------------------------------------------------------------------------------------- */
-#gallery{display:block; width:100%; margin-bottom:50px;}
-#gallery figure figcaption{display:block; width:100%; clear:both;}
-#gallery li{margin-bottom:30px;}
+
 
 
 /* Font Awesome Social Icons
@@ -544,10 +529,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#97A9BD !important;}
 #ctdetails button:hover{color:inherit; background-color:transparent; border-color:inherit;}
 
 
-/* Footer */
-#footer .heading{color:#FFFFFF;}
-#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
-
+  
 
 /* Navigation */
 #mainav li a{color:inherit;}
@@ -679,120 +661,6 @@ table a, #comments a{background-color:inherit;}
 /* Cambios MK Corporación */
 
 
-
-/* Portafolio en galería */
-#portfolio {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
-
-.section-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.section-subtitle {
-    font-size: 18px;
-    color: #777;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.filters a {
-    font-size: 16px;
-    font-weight: 500;
-    margin-right: 15px;
-    color: #555;
-    padding: 10px 15px;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
-
-.filters a.active, .filters a:hover {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.portfolio-container {
-    display: flex; /* Cambiar a flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente (si es necesario) */
-    width: 50%; /* Ancho del 50% */
-    margin: 0 auto; 
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-
-.portfolio-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
-}
-
-.portfolio-item img {
-    width: 100%;   
-    height: 250px;  
-    object-fit: cover; 
-    transition: opacity 0.3s ease;
-}
-
-
-.portfolio-item .content-holder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.portfolio-item:hover .content-holder {
-    opacity: 1;
-}
-
-.portfolio-item .text-holder {
-    margin-top: 20px;
-}
-
-.portfolio-item .text-holder .title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.portfolio-item .text-holder .subtitle {
-    font-size: 14px;
-    color: #ddd;
-}
 
 /* Mision y Vision */
 .container-vision-mision {

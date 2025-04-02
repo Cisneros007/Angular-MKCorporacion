@@ -9,10 +9,9 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   logo = 'assets/images/Logo.png';
+  logoS = 'assets/images/LogoSinFondo.png';
   bannerPG = 'assets/images/bannerPG.png';
   bannerPG2='assets/images/bannerPG2.png';
   bannerPG3 ='assets/images/bannerPG3.png';
 
-
 }
-

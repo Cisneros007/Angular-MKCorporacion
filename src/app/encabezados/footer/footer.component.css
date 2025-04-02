@@ -1,9 +1,13 @@
-/* Estilos generales */
-.overlay {
-    background-size: cover;
-    background-position: center;
-    padding: 40px 0;
-    color: #ffffff;
+body {
+    font-family: Arial, sans-serif;
+ 
+}
+.fondo-footer{
+    background-color: #143a4b;
+}
+p {
+    color: white;
+    margin: 0;
 }
 
 /* Footer */
@@ -14,9 +18,10 @@
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+
+    color: white;
 }
 
-/* Secciones del footer */
 .one_quarter {
     flex: 1;
     min-width: 220px;
@@ -24,15 +29,11 @@
 }
 
 /* Logo */
-h1.logoname a {
+h1 a {
     color: #ffffff;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-}
-
-h1.logoname span {
-    color: #feffff;
 }
 
 /* Títulos de sección */
@@ -60,7 +61,7 @@ h6.heading {
 }
 
 .linklist a:hover {
-    color: #0b3c50;
+    color: #052632;
     text-decoration: underline;
 }
 
@@ -84,7 +85,7 @@ h6.heading {
 
 /* Copyright */
 .wrapper.row5 {
-    background: #0b3c50;
+    background: #051e28;
     text-align: center;
     padding: 10px 0;
 }
@@ -102,27 +103,4 @@ h6.heading {
 #copyright a:hover {
     text-decoration: underline;
     color: #feffff;
-}
-
-/* Botón de volver arriba */
-#backtotop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #0b3c50;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 50%;
-    text-align: center;
-    display: none;
-    transition: all 0.3s ease;
-}
-
-#backtotop i {
-    font-size: 18px;
-}
-
-#backtotop:hover {
-    background: #ffffff;
-    color: #0b3c50;
 }

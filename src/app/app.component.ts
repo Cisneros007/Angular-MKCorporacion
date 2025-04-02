@@ -15,11 +15,6 @@ export class AppComponent {
   title = 'MKCorporacion';
 
 
-  imagePaths: string[] = [
-    'assets/images/Logo.png',
-    'assets/images/img2.png',
-    'assets/images/img3.svg'
-  ];
 
 
 
