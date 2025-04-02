@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class OportunidadLaboralComponent {
 
+  scrollToServices() {
+    const servicesSection = document.getElementById('services-section');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

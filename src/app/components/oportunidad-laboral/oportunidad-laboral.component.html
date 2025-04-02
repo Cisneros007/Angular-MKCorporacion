@@ -10,19 +10,13 @@
       </div>
   </header>
 
-  <nav class="top-menu">
-      <button class="btn">Bolsa de Trabajo</button>
-      <button class="btn">Certificado Único Laboral</button>
-      <button class="btn">Capacítate</button>
-  </nav>
-
   <section class="hero">
       <div class="hero-text">
           <h2>¡Encuentra tu próximo empleo!</h2>
           <p>Miles de vacantes disponibles</p>
           <div class="hero-buttons">
-              <button class="btn">Ver vacantes</button>
-              <button class="btn">Servicios para empresas</button>
+            <li class="btn nav-item"><a class="nav-link" href="vacantes">Ver vacantes</a></li>
+            <button class="btn" (click)="scrollToServices()">Servicios para empresas</button>
           </div>
       </div>
       <div class="hero-image">
@@ -42,85 +36,102 @@
       <button class="btn">Buscar</button>
   </div>
 
-  <section class="more-services">
-      <h2>Más Servicios</h2>
-      <div class="services-container">
-          <div class="service">
-              <h3>Certificado Único Laboral</h3>
-              <p>Obtén gratis tu certificado con toda la información que necesitas para postular a un empleo.</p>
-          </div>
-          <div class="service">
-              <h3>CAPACITA-T</h3>
-              <p>Mejora tu empleabilidad con cursos gratuitos en alta demanda.</p>
-          </div>
-          <div class="service">
-              <h3>Plataforma Mi Carrera</h3>
-              <p>Accede a información sobre carreras mejor pagadas y opciones de financiamiento educativo.</p>
-          </div>
-      </div>
+  <section id="services-section" class="more-services">
+    <h2>Más Servicios</h2>
+    <div class="services-container">
+        <!-- Servicio 1 -->
+        <div class="service">
+            <img src="https://sudaca.pe/wp-content/uploads/Certificado-Unico-Laboral.jpg" alt="Servicio 1">
+            <h3>Certificado Único Laboral</h3>
+            <p>Obtén gratis tu certificado con toda la información que necesitas para postular a un empleo.</p>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="service">
+            <img src="https://cdn.www.gob.pe/uploads/document/file/6733998/998352-capacitat2-ok.png" alt="Servicio 2">
+            <h3>CAPACITA-T</h3>
+            <p>Mejora tu empleabilidad con cursos gratuitos en alta demanda.</p>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="service">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/389/643/non_2x/business-person-analyzing-financial-statistics-displayed-on-the-tablet-screen-free-photo.jpg" alt="Servicio 3">
+            <h3>Plataforma Mi Carrera</h3>
+            <p>Accede a información sobre carreras mejor pagadas y opciones de financiamiento educativo.</p>
+        </div>
+        <!-- Servicio 4 -->
+        <div class="service">
+            <img src="https://gbsrecursoshumanos.com/wp-content/uploads/2018/07/asesoria-y-seguimiento.jpg" alt="Servicio 4">
+            <h3>Asesoría Personalizada</h3>
+            <p>Recibe ayuda profesional para elegir el mejor camino laboral según tu perfil.</p>
+        </div>
+        <!-- Servicio 5 -->
+        <div class="service">
+            <img src="https://www.equiposytalento.com/upload/talent_noticias/004/4672/curriculum.png" alt="Servicio 5">
+            <h3>Revisión de CV</h3>
+            <p>Haz que tu currículum destaque con nuestra revisión experta.</p>
+        </div>
+        <!-- Servicio 6 -->
+        <div class="service">
+            <img src="https://superrhheroes.sesametime.com/wp-content/uploads/2019/07/consejos-desconexion-vacaciones.jpg" alt="Servicio 6">
+            <h3>Mentoría de Empleo</h3>
+            <p>Conéctate con expertos que te ayudarán a obtener mejores oportunidades laborales.</p>
+        </div>
+        <!-- Servicio 7 -->
+        <div class="service">
+            <img src="https://empapelarte.es/wp-content/uploads/2020/09/entrevista-laboral-empapelarte-1024x683.jpg" alt="Servicio 7">
+            <h3>Entrenamiento en Entrevistas</h3>
+            <p>Prepara tus entrevistas con simulaciones y consejos prácticos.</p>
+        </div>
+        <!-- Servicio 8 -->
+        <div class="service">
+            <img src="https://www.wilko.marketing/wp-content/uploads/sites/116/2021/05/networking.jpg" alt="Servicio 8">
+            <h3>Red de Contactos</h3>
+            <p>Accede a una red de profesionales y empresas del sector laboral.</p>
+        </div>
+        <!-- Servicio 9 -->
+        <div class="service">
+            <img src="https://universae.com/wp-content/uploads/2023/06/que-es-el-networking.webp" alt="Servicio 9">
+            <h3>Curso de Networking</h3>
+            <p>Aprende a conectar con personas clave que te pueden abrir puertas en tu carrera.</p>
+        </div>
+    </div>
   </section>
 
-  <section class="job-offers">
-      <h2>Ofertas Laborales</h2>
-      <div class="jobs-container">
-          <div class="job">
-              <h3>Hunt LNG Operating Company</h3>
-              <p><strong>Puesto:</strong> Técnico Eléctrico Nivel II</p>
-              <p><strong>Ubicación:</strong> Lima, Cañete, San Vicente de Cañete</p>
-              <p><strong>Fecha:</strong> 2025-03-28</p>
-              <button class="btn">Ver Oferta</button>
-          </div>
-          <div class="job">
-              <h3>INTEGRA RETAIL S.A.C.</h3>
-              <p><strong>Puesto:</strong> VENDEDOR - GMG CAÑETE</p>
-              <p><strong>Ubicación:</strong> Lima, Cañete, San Vicente de Cañete</p>
-              <p><strong>Fecha:</strong> 2025-03-28</p>
-              <button class="btn">Ver Oferta</button>
-          </div>
-          <div class="job">
-              <h3>Empresa XYZ</h3>
-              <p><strong>Puesto:</strong> Analista de Sistemas</p>
-              <p><strong>Ubicación:</strong> Lima, Miraflores</p>
-              <p><strong>Fecha:</strong> 2025-03-28</p>
-              <button class="btn">Ver Oferta</button>
-          </div>
-          <div class="job">
-              <h3>Empresa ABC</h3>
-              <p><strong>Puesto:</strong> Diseñador UX/UI</p>
-              <p><strong>Ubicación:</strong> Lima, San Isidro</p>
-              <p><strong>Fecha:</strong> 2025-03-28</p>
-              <button class="btn">Ver Oferta</button>
-          </div>
-          <div class="job">
-              <h3>Corporación DEF</h3>
-              <p><strong>Puesto:</strong> Desarrollador Full Stack</p>
-              <p><strong>Ubicación:</strong> Lima, Surco</p>
-              <p><strong>Fecha:</strong> 2025-03-28</p>
-              <button class="btn">Ver Oferta</button>
-          </div>
-      </div>
-      <button class="btn full-width">Ver todas las ofertas</button>
-  </section>
+    <!-- Nueva sección: Testimonios -->
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"Gracias a MK-Corporacion, encontré mi trabajo soñado en menos de dos meses. Los servicios son excelentes y muy útiles."</p>
+                <span>- Juan Pérez</span>
+            </div>
+            <div class="testimonial">
+                <p>"La asesoría personalizada me ayudó a entender mejor el mercado laboral y cómo mejorar mi perfil profesional."</p>
+                <span>- Ana García</span>
+            </div>
+            <div class="testimonial">
+                <p>"La plataforma de capacitaciones es fantástica, logré completar varios cursos que me dieron el impulso que necesitaba."</p>
+                <span>- Carlos Rodríguez</span>
+            </div>
+        </div>
+    </section>
 
-  <div class="consultor-empleo">
-      <p>Ingresar como <a href="#" class="link">Consultor de empleo</a></p>
-  </div>
+    <!-- Nueva sección: Preguntas Frecuentes -->
+    <section class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>¿Cómo puedo crear una cuenta?</h3>
+                <p>Solo tienes que registrarte en nuestro sitio web proporcionando tu información básica y podrás acceder a todos nuestros servicios.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo me postulo a una vacante?</h3>
+                <p>Una vez registrado, podrás aplicar directamente desde la sección de vacantes disponibles en nuestro portal.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿El servicio de asesoría es gratuito?</h3>
+                <p>Sí, la asesoría personalizada es completamente gratuita para todos los usuarios registrados.</p>
+            </div>
+        </div>
+    </section>
 
-  <section class="more-services">
-      <h2>Tutoriales</h2>
-      <div class="services-container">
-          <div class="service">
-              <h3>Certificado Único Laboral</h3>
-              <p>Obtén gratis tu certificado con toda la información que necesitas para postular a un empleo.</p>
-          </div>
-          <div class="service">
-              <h3>CAPACITA-T</h3>
-              <p>Mejora tu empleabilidad con cursos gratuitos en alta demanda.</p>
-          </div>
-          <div class="service">
-              <h3>Plataforma Mi Carrera</h3>
-              <p>Accede a información sobre carreras mejor pagadas y opciones de financiamiento educativo.</p>
-          </div>
-      </div>
-  </section>
 </div>

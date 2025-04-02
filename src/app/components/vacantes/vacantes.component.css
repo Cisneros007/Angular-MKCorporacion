@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Botón de volver */
+  .btn.nav-item {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn.nav-item:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+  }
+  
+  /* Contenedor de ofertas laborales */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Tarjetas de oferta */
+  .bg-white {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg-white:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efecto de resplandor */
+  .bg-white::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 80%);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .bg-white:hover::after {
+    opacity: 1;
+  }
+  
+  /* Botón de ver oferta */
+  button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    color: white;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #0056b3, #00a1cc);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

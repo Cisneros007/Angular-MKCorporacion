@@ -178,71 +178,133 @@ h1 {
     background-color: #E0F4FF;
 }
 
-/* Ofertas de Trabajo */
-.job-offers {
-    margin-top: 50px;
-}
-
-.job-offers h2 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.jobs-container {
+/* Diseño para la sección de Más Servicios */
+.more-services .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     margin-top: 20px;
 }
 
-.job {
-    background: white;
+.service {
+    background-color: #f4f4f4;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Diseño para Testimonios */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.job h3 {
-    color: #003F5C;
-    font-size: 1.5rem;
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-.job p {
-    margin: 10px 0;
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
 }
 
-.job:hover {
-    transform: scale(1.05);
-    background-color: #E0F4FF;
+.testimonial p {
+    font-style: italic;
 }
 
-.full-width {
+.testimonial span {
     display: block;
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-    font-size: 1.1rem;
+    margin-top: 10px;
     font-weight: bold;
 }
 
-/* Consultor de empleo */
-.consultor-empleo {
-    text-align: center;
-    margin-top: 30px;
+/* Fade-in animation for testimonials */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.consultor-empleo .link {
-    color: #003F5C;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s ease;
+/* Diseño para Preguntas Frecuentes */
+.faq {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
 }
 
-.consultor-empleo .link:hover {
-    text-decoration: underline;
-    color: #72C2E8;
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: slideIn 0.8s forwards;
+}
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.faq-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Slide-in animation for FAQ items */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* Responsividad */
