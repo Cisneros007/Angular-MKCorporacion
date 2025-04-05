@@ -15,7 +15,7 @@ export const routes: Routes = [
   { path: 'nosotros',component: NosotrosComponent},
   { path: 'laboral',component: OportunidadLaboralComponent},
   { path: 'contactanos',component: ContactanosComponent},
-  { path: 'enviar',component: EnviarCvComponent},
+  { path: 'send',component: EnviarCvComponent},
   { path: 'vacantes',component: VacantesComponent},
   { path: 'ubicanos',component: UbicanosComponent},
 
