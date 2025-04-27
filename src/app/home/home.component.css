@@ -30,8 +30,62 @@ p, h3, h6, .Descripcion {
 
 .carousel-indicators .active {
     opacity: 1;
-    background-color: #007bff;
+    background-color: #16547b;
 }
+.carousel-item {
+    position: relative;
+  }
+  
+  /* Estilo general de botones */
+  .carousel-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 2.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Botón 1 posición personalizada */
+  .carousel-button1 {
+    top: 75%;
+    left: 15%;
+    background-color: #376dab;
+  }
+  
+  /* Botón 2 */
+  .carousel-button2 {
+    top: 75%;
+    left: 45%;
+    background-color: #376dab;
+  }
+  
+  /* Botón 3 */
+  .carousel-button3 {
+    top: 80%;
+    left: 75%;
+    background-color: #376dab;
+  }
+  
+  /* Hover para todos */
+  .carousel-button:hover {
+    background-color: #0056b3;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  
+  /* Responsive: Ajustar en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .carousel-button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      top: 80%;
+    }
+  }
+  
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {

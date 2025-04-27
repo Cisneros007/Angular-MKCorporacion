@@ -7,7 +7,7 @@ import { ContactanosComponent } from './components/contactanos/contactanos.compo
 import { EnviarCvComponent } from './components/enviar-cv/enviar-cv.component';
 import { VacantesComponent } from './components/vacantes/vacantes.component';
 import { UbicanosComponent } from './components/ubicanos/ubicanos.component';
-
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -18,5 +18,5 @@ export const routes: Routes = [
   { path: 'send',component: EnviarCvComponent},
   { path: 'vacantes',component: VacantesComponent},
   { path: 'ubicanos',component: UbicanosComponent},
-
+  { path: 'formulario',component: FormularioComponent},
 ];

@@ -1,3 +1,192 @@
-p, h3, h6, .Descripcion {
-    font-style: normal !important;
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #eef2f3, #cfd9df);
+}
+
+.wrapper {
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título centrado y estilizado */
+.sectiontitle {
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.sectiontitle h6 {
+    font-size: 24px;
+    color: #003d80;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Contenedor principal */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilos para Información y Formulario */
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 350px;
+    max-width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+.contact-info:hover, .contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* Lista de información de contacto */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.contact-info i {
+    font-size: 20px;
+    margin-right: 12px;
+    color: #0056b3;
+    transition: transform 0.3s;
+}
+
+.contact-info li:hover i {
+    transform: scale(1.15);
+}
+
+/* Selector de Ubicación */
+.location-selector {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.location-selector label {
+    font-weight: bold;
+    color: #333;
+}
+
+.location-selector select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.location-selector select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Formulario */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Separación extra entre mensaje y botón */
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 12px;
+}
+
+.contact-form button {
+    background: #0056b3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #003d80;
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🎯 **Versión para PC (mínimo 1024px)** */
+@media (min-width: 1024px) {
+    .contact-info, .contact-form {
+        flex: 1;
+        max-width: 420px;
+    }
+}
+
+/**Versión para tablets y móviles (menos de 1024px)**/
+@media (max-width: 1023px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        max-width: 85%;
+    }
 }
