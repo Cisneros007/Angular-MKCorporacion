@@ -10,6 +10,13 @@ export class NosotrosComponent {
   logo = 'assets/images/Logo.png';
   banner = 'assets/images/nosotros-bg.jpeg';
   bannerPG = 'assets/images/bannerPG.png';
+  Crecimiento = 'assets/images/crecimiento.jpg';
+  innovacion ='assets/images/innovacion.jpg';
+  brujula = 'assets/images/brujula.jpg';
+
+
+
+
   CLima1 = 'assets/images/colaboradores/lima/Clima1.png';
   CLima2 = 'assets/images/colaboradores/lima/Clima2.png';
   CLima3 = 'assets/images/colaboradores/lima/Clima3.png';
@@ -28,6 +35,8 @@ export class NosotrosComponent {
   //
   Carequipa1 = 'assets/images/colaboradores/arequipa/Carequipa1.png';
 
+
+  
   contador = 0;
   final = 100;
   duracion = 3000; 

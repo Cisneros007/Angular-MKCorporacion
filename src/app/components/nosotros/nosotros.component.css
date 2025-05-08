@@ -234,74 +234,6 @@ p, h3, h6, .Descripcion {
 	}
   }
 
-  /*Galery*/
-  .photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Solo 4 columnas */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .gallery-item {
-    overflow: hidden;
-    border-radius: 10px;
-    max-width: 99%;
-    margin: -8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transform: rotate(-2deg);
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:nth-child(even) {
-    transform: rotate(2deg);
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item img:hover {
-    transform: scale(1.05);
-  }
-  .gallery-tittle {
-    font-size: 3rem; 
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-/* Responsivo */
-@media (max-width: 1200px) {
-    .photo-gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .photo-gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .photo-gallery {
-      grid-template-columns: 1fr;
-    }
-  
-    .gallery-title {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-  }
-
-
-  
   .container {
     display: flex;
     flex-direction: column;
@@ -488,5 +420,72 @@ p, h3, h6, .Descripcion {
   .card-image {
     border-right: none;
     border-bottom: 2px solid #003b4a;
+  }
+}
+
+/* Colaboradores */
+.mosaico {
+  column-count: 4;
+  column-gap: 1.5rem;
+  padding: 2rem;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+/* Tamaños personalizados */
+.gallery-item.tall img {
+  height: 400px;
+}
+
+.gallery-item.wide img {
+  height: 300px;
+}
+
+.gallery-item.small img {
+  height: 200px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .mosaico {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .mosaico {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .mosaico {
+    column-count: 1;
+  }
+
+  .gallery-item.tall img,
+  .gallery-item.wide img,
+  .gallery-item.small img {
+    height: auto;
   }
 }

@@ -1,27 +1,40 @@
-<div class="form-container">
+<a href="vacantes" class="btn-volver">Volver</a>
+
+<div class="page-wrapper">
+  <div class="form-container">
     <h2>Formulario de Contacto</h2>
     <form class="contact-form">
       <div class="form-group">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required />
       </div>
-  
+
       <div class="form-group">
         <label for="mensaje">Mensaje</label>
         <textarea id="mensaje" name="mensaje" required></textarea>
       </div>
-  
+
       <div class="form-group">
         <label for="correo">Correo</label>
         <input type="email" id="correo" name="correo" required />
       </div>
-  
+
+      <div class="form-group">
+        <label for="location"><strong>Selecciona tu ubicación:</strong></label>
+        <select id="location">
+          <option value="Lima">Lima</option>
+          <option value="Arequipa">Arequipa</option>
+          <option value="Cusco">Cusco</option>
+          <option value="Huancayo">Huancayo</option>
+        </select>
+      </div>  
+
       <div class="form-group">
         <label for="cv">Adjuntar CV</label>
         <input type="file" id="cv" />
       </div>
-  
+
       <button type="submit" class="submit-btn">Enviar</button>
     </form>
   </div>
-  
+</div>

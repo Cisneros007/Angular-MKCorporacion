@@ -54,21 +54,21 @@ p, h3, h6, .Descripcion {
   .carousel-button1 {
     top: 75%;
     left: 15%;
-    background-color: #376dab;
+    background-color: #1d416a;
   }
   
   /* Botón 2 */
   .carousel-button2 {
     top: 75%;
-    left: 45%;
-    background-color: #376dab;
+    left: 20%;
+    background-color: #1d416a;  
   }
   
   /* Botón 3 */
   .carousel-button3 {
     top: 80%;
     left: 75%;
-    background-color: #376dab;
+    background-color: #1d416a;
   }
   
   /* Hover para todos */
@@ -109,7 +109,8 @@ p, h3, h6, .Descripcion {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #bcd5e2;
+    
+    padding: 20px;
 }
 .sostenibilidad .text {
     flex: 1;
@@ -144,7 +145,8 @@ p, h3, h6, .Descripcion {
 
 .sostenibilidad .image img {
     max-width: 100%;
-    height: 350px;
+    object-fit: cover;  
+    height: 400px;
 }
 .info {
     display: flex;
@@ -169,7 +171,7 @@ p, h3, h6, .Descripcion {
 
 .card img {
     max-width: 100%;
-    height: auto;
+    height: 350px;
 }
 .card h3 {
     color: #0b3c50;

@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class OportunidadLaboralComponent {
 
+  vacantes= 'assets/images/vacantes.jpg';
+
+  
   scrollToServices() {
     const servicesSection = document.getElementById('services-section');
     if (servicesSection) {

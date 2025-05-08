@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { MapaLeafletComponent } from "../mapa-leaflet/mapa-leaflet.component";
 
 @Component({
   selector: 'app-ubicanos',
-  imports: [],
+  imports: [MapaLeafletComponent],
   templateUrl: './ubicanos.component.html',
   styleUrl: './ubicanos.component.css'
 })

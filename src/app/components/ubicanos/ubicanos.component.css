@@ -4,8 +4,9 @@
 .TituloUBI {
     text-align: center;
     font-size: 2.5rem;
+    padding-top: 3%;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -18,6 +19,7 @@
     background-color: #082b39;
     padding: 50px 20px;
 }
+
 
 /* Contenedor flexible */
 .d-flex {
@@ -145,3 +147,4 @@
         transform: translateY(0);
     }
 }
+

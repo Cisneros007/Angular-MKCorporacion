@@ -2,12 +2,17 @@
   <header class="header">
       <h1>MK-Corporacion</h1>
       <div class="social-icons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-tiktok"></i>
-      </div>
+        <a href="https://www.facebook.com/share/12JCq9Kvu4X/?mibextid=wwXIfr" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/mk_corporacion_oficial?igsh=MWk4NnA4YzN2dnM4Ng==" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/mk-corporaci%C3%B3n/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    
   </header>
 
   <section class="hero">
@@ -20,7 +25,7 @@
           </div>
       </div>
       <div class="hero-image">
-          <img src="https://www.shutterstock.com/image-photo/portraits-same-person-doing-various-260nw-2496886639.jpg" alt="Personas representando diferentes empleos">
+          <img [src]="vacantes" alt="Personas representando diferentes empleos">
       </div>
   </section>
 
@@ -40,98 +45,89 @@
     <h2>Más Servicios</h2>
     <div class="services-container">
         <!-- Servicio 1 -->
-        <div class="service">
-            <img src="https://sudaca.pe/wp-content/uploads/Certificado-Unico-Laboral.jpg" alt="Servicio 1">
-            <h3>Certificado Único Laboral</h3>
-            <p>Obtén gratis tu certificado con toda la información que necesitas para postular a un empleo.</p>
-        </div>
-        <!-- Servicio 2 -->
-        <div class="service">
-            <img src="https://cdn.www.gob.pe/uploads/document/file/6733998/998352-capacitat2-ok.png" alt="Servicio 2">
-            <h3>CAPACITA-T</h3>
-            <p>Mejora tu empleabilidad con cursos gratuitos en alta demanda.</p>
-        </div>
-        <!-- Servicio 3 -->
-        <div class="service">
-            <img src="https://static.vecteezy.com/system/resources/previews/007/389/643/non_2x/business-person-analyzing-financial-statistics-displayed-on-the-tablet-screen-free-photo.jpg" alt="Servicio 3">
-            <h3>Plataforma Mi Carrera</h3>
-            <p>Accede a información sobre carreras mejor pagadas y opciones de financiamiento educativo.</p>
-        </div>
-        <!-- Servicio 4 -->
-        <div class="service">
-            <img src="https://gbsrecursoshumanos.com/wp-content/uploads/2018/07/asesoria-y-seguimiento.jpg" alt="Servicio 4">
-            <h3>Asesoría Personalizada</h3>
-            <p>Recibe ayuda profesional para elegir el mejor camino laboral según tu perfil.</p>
-        </div>
-        <!-- Servicio 5 -->
-        <div class="service">
-            <img src="https://www.equiposytalento.com/upload/talent_noticias/004/4672/curriculum.png" alt="Servicio 5">
-            <h3>Revisión de CV</h3>
-            <p>Haz que tu currículum destaque con nuestra revisión experta.</p>
-        </div>
-        <!-- Servicio 6 -->
-        <div class="service">
-            <img src="https://superrhheroes.sesametime.com/wp-content/uploads/2019/07/consejos-desconexion-vacaciones.jpg" alt="Servicio 6">
-            <h3>Mentoría de Empleo</h3>
-            <p>Conéctate con expertos que te ayudarán a obtener mejores oportunidades laborales.</p>
-        </div>
-        <!-- Servicio 7 -->
-        <div class="service">
-            <img src="https://empapelarte.es/wp-content/uploads/2020/09/entrevista-laboral-empapelarte-1024x683.jpg" alt="Servicio 7">
-            <h3>Entrenamiento en Entrevistas</h3>
-            <p>Prepara tus entrevistas con simulaciones y consejos prácticos.</p>
-        </div>
-        <!-- Servicio 8 -->
-        <div class="service">
-            <img src="https://www.wilko.marketing/wp-content/uploads/sites/116/2021/05/networking.jpg" alt="Servicio 8">
-            <h3>Red de Contactos</h3>
-            <p>Accede a una red de profesionales y empresas del sector laboral.</p>
-        </div>
-        <!-- Servicio 9 -->
-        <div class="service">
-            <img src="https://universae.com/wp-content/uploads/2023/06/que-es-el-networking.webp" alt="Servicio 9">
-            <h3>Curso de Networking</h3>
-            <p>Aprende a conectar con personas clave que te pueden abrir puertas en tu carrera.</p>
-        </div>
+    <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://sudaca.pe/wp-content/uploads/Certificado-Unico-Laboral.jpg" alt="Certificado Único Laboral" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">Certificado Único Laboral</h4>
+        <p>Obtén tu certificado con toda la información para postular con confianza y transparencia.</p>
+      </div>
+  
+      <!-- Servicio 2 -->
+      <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://cdn.www.gob.pe/uploads/document/file/6733998/998352-capacitat2-ok.png" alt="CAPACITA-T" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">CAPACITA-T</h4>
+        <p>Refuerza tus habilidades con cursos gratuitos en áreas de alta demanda laboral.</p>
+      </div>
+  
+      <!-- Servicio 3 -->
+      <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://static.vecteezy.com/system/resources/previews/007/389/643/non_2x/business-person-analyzing-financial-statistics-displayed-on-the-tablet-screen-free-photo.jpg" alt="Mi Carrera" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">Plataforma Mi Carrera</h4>
+        <p>Decide con inteligencia: conoce las carreras mejor pagadas y opciones de financiamiento.</p>
+      </div>
+  
+      <!-- Servicio 4 -->
+      <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://gbsrecursoshumanos.com/wp-content/uploads/2018/07/asesoria-y-seguimiento.jpg" alt="Asesoría Personalizada" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">Asesoría Personalizada</h4>
+        <p>Guía profesional para elegir el mejor camino laboral según tu perfil.</p>
+      </div>
+  
+      <!-- Servicio 5 -->
+      <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://www.equiposytalento.com/upload/talent_noticias/004/4672/curriculum.png" alt="Revisión de CV" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">Revisión de CV</h4>
+        <p>Haz que tu hoja de vida destaque con una revisión detallada por expertos.</p>
+      </div>
+  
+      <!-- Servicio 6 -->
+      <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://superrhheroes.sesametime.com/wp-content/uploads/2019/07/consejos-desconexion-vacaciones.jpg" alt="Mentoría de Empleo" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">Mentoría de Empleo</h4>
+        <p>Conéctate con mentores que impulsarán tus decisiones laborales.</p>
+      </div>
+  
+      <!-- Servicio 7 -->
+      <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://empapelarte.es/wp-content/uploads/2020/09/entrevista-laboral-empapelarte-1024x683.jpg" alt="Entrenamiento en Entrevistas" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">Entrenamiento en Entrevistas</h4>
+        <p>Prepárate con simulacros y consejos para enfrentar entrevistas exitosamente.</p>
+      </div>
+  
+      <!-- Servicio 8 -->
+      <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://www.wilko.marketing/wp-content/uploads/sites/116/2021/05/networking.jpg" alt="Red de Contactos" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">Red de Contactos</h4>
+        <p>Conecta con profesionales clave y accede a oportunidades laborales reales.</p>
+      </div>
+  
+      <!-- Servicio 9 -->
+      <div class="service text-center border rounded shadow-sm p-3 bg-white">
+        <img src="https://universae.com/wp-content/uploads/2023/06/que-es-el-networking.webp" alt="Curso de Networking" class="img-fluid rounded mb-3">
+        <h4 class="fw-semibold">Curso de Networking</h4>
+        <p>Domina el arte de crear conexiones que te impulsen en tu carrera profesional.</p>
+      </div>
+  
     </div>
   </section>
 
-    <!-- Nueva sección: Testimonios -->
-    <section class="testimonials">
-        <h2>Testimonios</h2>
-        <div class="testimonials-container">
-            <div class="testimonial">
-                <p>"Gracias a MK-Corporacion, encontré mi trabajo soñado en menos de dos meses. Los servicios son excelentes y muy útiles."</p>
-                <span>- Juan Pérez</span>
-            </div>
-            <div class="testimonial">
-                <p>"La asesoría personalizada me ayudó a entender mejor el mercado laboral y cómo mejorar mi perfil profesional."</p>
-                <span>- Ana García</span>
-            </div>
-            <div class="testimonial">
-                <p>"La plataforma de capacitaciones es fantástica, logré completar varios cursos que me dieron el impulso que necesitaba."</p>
-                <span>- Carlos Rodríguez</span>
-            </div>
-        </div>
-    </section>
 
     <!-- Nueva sección: Preguntas Frecuentes -->
     <section class="faq">
         <h2>Preguntas Frecuentes</h2>
         <div class="faq-container">
             <div class="faq-item">
-                <h3>¿Cómo puedo crear una cuenta?</h3>
-                <p>Solo tienes que registrarte en nuestro sitio web proporcionando tu información básica y podrás acceder a todos nuestros servicios.</p>
-            </div>
-            <div class="faq-item">
                 <h3>¿Cómo me postulo a una vacante?</h3>
-                <p>Una vez registrado, podrás aplicar directamente desde la sección de vacantes disponibles en nuestro portal.</p>
+                <p>Entra ala seccion de vacantes y puedes postular compretando un formulario.</p>
             </div>
             <div class="faq-item">
-                <h3>¿El servicio de asesoría es gratuito?</h3>
-                <p>Sí, la asesoría personalizada es completamente gratuita para todos los usuarios registrados.</p>
+                <h3>¿Puedo recibir mentoría aunque no tenga experiencia laboral?</h3>
+                <p>Claro que sí, nuestras mentorías están diseñadas para ayudarte sin importar tu nivel de experiencia.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Los cursos tienen constancia o certificado?</h3>
+                <p>Sí, al finalizar cada curso, puedes descargar una constancia de participación o certificado digital, según el programa.</p>
             </div>
         </div>
     </section>
-
+    
 </div>

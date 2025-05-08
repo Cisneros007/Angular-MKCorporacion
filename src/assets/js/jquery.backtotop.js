@@ -125,5 +125,10 @@ function sendEmail(fileData) {
             alert('Hubo un error al enviar el correo. Intenta nuevamente.');
             console.error('Error:', err);
         });
-    }    
+
 //SCRIPS
+
+
+  
+
+}

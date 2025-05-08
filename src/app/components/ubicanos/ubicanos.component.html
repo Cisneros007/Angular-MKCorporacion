@@ -1,7 +1,60 @@
-<div> 
+  <h1 class="TituloUBI">Conoce nuestras Ubicaciones</h1>
+
+ <div>
+  <div class="row g-4 align-items-stretch">
+        
+    <!-- Mapa (Izquierda) -->
+    <div class="col-12 col-lg-6">
+      <div class="h-100 border rounded p-3 shadow-sm bg-white d-flex align-items-center justify-content-center">
+        <app-mapa-leaflet class="w-100" style="height: 100%; min-height: 400px;"></app-mapa-leaflet>
+      </div>
+    </div>
+
+   <!-- Información General (Derecha) -->
+<div class="col-12 col-lg-6">
+  <div class="h-100 border rounded p-4 shadow-sm bg-white text-start" style="font-size: 1.2rem;">
+    <h2 class="text-dark mb-4" style="font-size: 2rem;">🌎 Formamos Parte del Perú</h2>
+
+    <div class="mb-4">
+      <h6 class="mb-1" style="font-size: 1.5rem;">📍 Cobertura Nacional</h6>
+      <p class="text-secondary mb-0" style="font-size: 1.1rem;">
+        Contamos con una red de oficinas en las principales ciudades del país para estar más cerca de ti y ofrecerte soluciones a la medida.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <h6 class="mb-1" style="font-size: 1.5rem;">🏢 Conoce Nuestras Oficinas</h6>
+      <p class="text-secondary mb-0" style="font-size: 1.1rem;">
+        Desde el sur andino hasta la capital, nuestras sedes están ubicadas estratégicamente para brindarte atención de calidad, dondequiera que estés.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <h6 class="mb-1" style="font-size: 1.5rem;">🗺️ Ubicaciones Disponibles</h6>
+      <h5 class="text-dark" style="font-size: 1.3rem;">Lima, Huancayo, Arequipa, Cusco</h5>
+      <p class="text-secondary mb-0" style="font-size: 1.1rem;">
+        Visítanos en cualquiera de nuestras oficinas. Estamos comprometidos con ofrecerte un servicio ágil, eficiente y cercano.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <h6 class="mb-1" style="font-size: 1.5rem;">✅ Beneficios que ofrecemos</h6>
+      <ul class="list-unstyled text-secondary mb-0" style="font-size: 1.1rem;">
+        <li>✔️ Atención personalizada</li>
+        <li>✔️ Infraestructura moderna</li>
+        <li>✔️ Personal capacitado</li>
+        <li>✔️ Ubicaciones accesibles</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+ </div>
+
+
     <!--Nuestras oficinas -->
-    <div class="container-fluid ">
-      <h1 class="TituloUBI">Conoce nuestras Ubicaciones</h1>
+    <div class="container-fluid "> 
       <div class="container py-5 ">
           <div class="d-flex align-items-center">
               <!-- Imagen a la izquierda -->
@@ -14,7 +67,6 @@
                   <ul>
                       <li><i class="far fa-circle"></i>Lunes – Viernes: 9:00 AM - 7:00 PM</li>
                       <li><i class="far fa-circle"></i>Sábado: 9:00 AM - 6:00 PM</li>
-                      <li><i class="far fa-circle"></i>Domingo: Cerrado</li>
                   </ul>
                   <a href="contactanos" class="btn btn-primary mt-2">Contactanos Ahora</a>
                   <a href="https://www.google.com/maps?q=Centro+comercial+Ima+Sumac+de+329,Cusco" 
@@ -36,7 +88,6 @@
                   <ul>
                       <li><i class="far fa-circle"></i>Lunes – Viernes: 9:00 AM - 7:00 PM</li>
                       <li><i class="far fa-circle"></i>Sábado: 9:00 AM - 6:00 PM</li>
-                      <li><i class="far fa-circle"></i>Domingo: Cerrado</li>
                   </ul>
                   <a href="contactanos" class="btn btn-primary mt-2">Contactanos Ahora</a>
                   <a href="https://www.google.com/maps?q=Av+Lima+100+esquina+con+Av+Ejército,Arequipa" 
@@ -47,46 +98,42 @@
     </div>
     <div class="container-fluid py-5">
         <div class="container py-5 position-relative">
-            <div class="d-flex align-items-center">
-                <!-- Imagen a la izquierda -->
-                <img [src]="banner" alt="Logo">
-                <!-- Texto a la derecha sobresaliente -->
-                <div class="overlay-text">
-                    <h6>Ubicación: Huancayo</h6>
-                    <h1 class="mb-4">jr brasilia 375 - San Carlos, Quinto Piso – Huancayo</h1>
-                    <p>En MK, nuestro compromiso es impulsar tus ventas y garantizar que cada oportunidad se convierta en éxito. Visítanos en Huancayo, en el Segundo Piso de Jr Puno 168, nuestros servicios de calidad mientras transformamos tus experiencias comerciales.</p>
-                    <ul>
-                        <li><i class="far fa-circle"></i>Lunes – Viernes: 9:00 AM - 7:00 PM</li>
-                        <li><i class="far fa-circle"></i>Sábado: 9:00 AM - 6:00 PM</li>
-                        <li><i class="far fa-circle"></i>Domingo: Cerrado</li>
-                    </ul>
-                    <a href="contactanos" class="btn btn-primary mt-2">Contactanos Ahora</a>
-                    <a href="https://www.google.com/maps?q=Jr+Puno+168,Huancayo" 
-                       target="_blank" class="btn btn-primary mt-2">Ver en Google Maps</a>
-                </div>
+          <div class="d-flex align-items-center">
+            <img [src]="banner" alt="Logo">
+            <div class="overlay-text">
+              <h6>Ubicación: Huancayo</h6>
+              <h1 class="mb-4">Jr. Brasilia 375, San Carlos – Quinto Piso, Huancayo</h1>
+              <p>Encuéntranos en pleno distrito de San Carlos, Huancayo. Nuestras oficinas están ubicadas estratégicamente para brindarte un servicio ágil y personalizado en un espacio moderno y accesible.</p>
+              <ul>
+                <li><i class="far fa-circle"></i> Lunes – Viernes: 9:00 AM - 7:00 PM</li>
+                <li><i class="far fa-circle"></i> Sábado: 9:00 AM - 6:00 PM</li>
+              </ul>
+              <a href="contactanos" class="btn btn-primary mt-2">Contáctanos Ahora</a>
+              <a href="https://www.google.com/maps?q=Jr+Brasilia+375+San+Carlos+Huancayo" target="_blank" class="btn btn-primary mt-2">
+                Ver en Google Maps
+              </a>
             </div>
+          </div>
         </div>
       </div>
-  </div>
-  <div class="container-fluid py-5">
-    <div class="container py-5 position-relative">
-        <div class="d-flex align-items-center">
-            <!-- Imagen a la izquierda -->
+      
+      <div class="container-fluid py-5">
+        <div class="container py-5 position-relative">
+          <div class="d-flex align-items-center">
             <img [src]="banner" alt="Logo">
-            <!-- Texto a la derecha sobresaliente -->
             <div class="overlay-text">
-                <h6>Ubicación: Huancayo</h6>
-                <h1 class="mb-4">jr brasilia 375 - San Carlos, Quinto Piso – Huancayo</h1>
-                <p>En MK, nuestro compromiso es impulsar tus ventas y garantizar que cada oportunidad se convierta en éxito. Visítanos en Huancayo, en el Segundo Piso de Jr Puno 168, nuestros servicios de calidad mientras transformamos tus experiencias comerciales.</p>
-                <ul>
-                    <li><i class="far fa-circle"></i>Lunes – Viernes: 9:00 AM - 7:00 PM</li>
-                    <li><i class="far fa-circle"></i>Sábado: 9:00 AM - 6:00 PM</li>
-                    <li><i class="far fa-circle"></i>Domingo: Cerrado</li>
-                </ul>
-                <a href="contactanos" class="btn btn-primary mt-2">Contactanos Ahora</a>
-                <a href="https://www.google.com/maps?q=Jr+Puno+168,Huancayo" 
-                   target="_blank" class="btn btn-primary mt-2">Ver en Google Maps</a>
+              <h6>Ubicación: Lima</h6>
+              <h1 class="mb-4">Avenida Arequipa 1860, Oficina 1610, Lince – Lima</h1>
+              <p>Visítanos en el corazón de Lince, Lima, en el moderno edificio empresarial de la Av. Arequipa. Una ubicación privilegiada para ofrecerte un servicio eficiente y cercano.</p>
+              <ul>
+                <li><i class="far fa-circle"></i> Lunes – Viernes: 9:00 AM - 7:00 PM</li>
+                <li><i class="far fa-circle"></i> Sábado: 9:00 AM - 6:00 PM</li>
+              </ul>
+              <a href="contactanos" class="btn btn-primary mt-2">Contáctanos Ahora</a>
+              <a href="https://www.google.com/maps?q=Avenida+Arequipa+1860+Oficina+1610+Lince+Lima" target="_blank" class="btn btn-primary mt-2">
+                Ver en Google Maps
+              </a>
             </div>
+          </div>
         </div>
-    </div>
-  </div>
+      </div>
